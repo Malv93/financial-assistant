@@ -1,0 +1,80 @@
+{
+  "uuid": "9db3d401-b3d0-44e5-8ccc-454fdd871c88",
+  "lastMigration": 32,
+  "name": "Data",
+  "endpointPrefix": "",
+  "latency": 1000,
+  "port": 4000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+      {
+          "uuid": "c2d88e00-24fc-4773-846f-468c65b678b1",
+          "type": "http",
+          "documentation": "Mock some data for the FE",
+          "method": "get",
+          "endpoint": "data",
+          "responses": [
+              {
+                  "uuid": "eab7bf44-f3c3-4cc3-881c-d4d44a20f129",
+                  "body": "{\n  \"username\": \"Luigi\",\n  \"description\": \"Tutti i soldi sono investiti in titoli di stato.\"\n}",
+                  "latency": 1000,
+                  "statusCode": 200,
+                  "label": "Username and description of a portfolio owner",
+                  "headers": [],
+                  "bodyType": "INLINE",
+                  "filePath": "",
+                  "databucketID": "",
+                  "sendFileAsBody": false,
+                  "rules": [],
+                  "rulesOperator": "OR",
+                  "disableTemplating": false,
+                  "fallbackTo404": false,
+                  "default": true,
+                  "crudKey": "id",
+                  "callbacks": []
+              }
+          ],
+          "responseMode": null
+      }
+  ],
+  "rootChildren": [
+      {
+          "type": "route",
+          "uuid": "c2d88e00-24fc-4773-846f-468c65b678b1"
+      }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+      "enabled": false,
+      "type": "CERT",
+      "pfxPath": "",
+      "certPath": "",
+      "keyPath": "",
+      "caPath": "",
+      "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+      {
+          "key": "Content-Type",
+          "value": "application/json"
+      }
+  ],
+  "proxyReqHeaders": [
+      {
+          "key": "",
+          "value": ""
+      }
+  ],
+  "proxyResHeaders": [
+      {
+          "key": "",
+          "value": ""
+      }
+  ],
+  "data": [],
+  "callbacks": []
+}
